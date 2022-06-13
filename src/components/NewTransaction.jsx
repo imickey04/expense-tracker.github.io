@@ -39,7 +39,7 @@ const NewTransaction = ( { setTransactions } ) => {
   return (
     <Container>
         <Heading variant='h2' >New Transactions :</Heading>
-        <TextField variant='standard' label='Enter Expense'  onChange={(e) => setText(e.target.value)} />
+        <TextField variant='standard' label='Enter Expense' helperText="Enter the item name"  onChange={(e) => setText(e.target.value)} />
         <TextField variant='standard' label='Enter Amount' helperText="for debit write ' - ' " onChange={(e) => setAmount(e.target.value)} />
         <Button variant='contained' onClick={() => addTransaction()} >Add Transaction</Button>
     </Container>

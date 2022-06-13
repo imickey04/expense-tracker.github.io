@@ -12,7 +12,7 @@ const Transactions = ( { transactions, setTransactions } ) => {
   return (
     <Box>
       <Heading variant='h2'>Transactions History :</Heading>
-      <Divider style={{ marginTop: '10px' }} />
+      <Divider style={{ marginTop: '10px', width: '97%' }} />
       <List>
         {
           transactions.map(transaction => (
